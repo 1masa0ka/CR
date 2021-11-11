@@ -155,6 +155,6 @@ if st.button('予約削除'):
     st.dataframe(df_view)
 
 st.write('リロードすれば，上部の表に反映されます')
-
+st.write('トラブル等あれば，朝岡（荒木研）にご連絡くださいm(__)m')
 
 
