@@ -88,11 +88,11 @@ if st.button('予約確定'):
         df_col=df.columns.values
         df_index=df.index.values
         
-        df.to_csv('CR_date.csv',encoding='utf_8_sig')  
-        df=pd.read_csv('CR_date.csv',header=None)
+        df.to_csv('CR_date2.csv',encoding='utf_8_sig')  
+        df=pd.read_csv('CR_date2.csv',header=None)
         df.iloc[0,0]='Date'
-        df.to_csv('CR_date.csv', header=False, index=False,encoding='utf_8_sig')
-        df=pd.read_csv('CR_date.csv',index_col='Date')
+        df.to_csv('CR_date2.csv', header=False, index=False,encoding='utf_8_sig')
+        df=pd.read_csv('CR_date2.csv',index_col='Date')
         df_view=df.loc[reserv_date,:]   
         st.dataframe(df_view)    
     
