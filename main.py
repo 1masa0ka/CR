@@ -155,7 +155,7 @@ if st.button('予約削除'):
     st.dataframe(df_view)
 
     
-st.write('リロードすれば，上部の表に反映されます')
+st.write('このページをリロード(更新)すれば，上部の表に反映されます')
 st.write('トラブル等あれば，朝岡（荒木研）にご連絡くださいm(__)m')
 csv=open('CR_date.csv')
 st.download_button('Download:csv',csv,file_name='CR_date.csv',mime='csv')
